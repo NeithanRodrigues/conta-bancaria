@@ -6,7 +6,7 @@ public class Conta {
     private double saldo;
     String data;
 
-    Conta (String titular, String agencia){
+    public Conta (String titular, String agencia){
         this.titular = titular;
         this.agencia = agencia;
     }
