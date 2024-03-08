@@ -7,7 +7,6 @@ public class Main{
         c4.setNumero(930);
         c4.setSaldo(16745);
         Data d1_nasc = new Data(29, 01,2004);
-        System.out.println(d1_nasc.formatarData(d1_nasc.dia, d1_nasc.mes, d1_nasc.ano));
 
         //Usarei de exemplo apenas uma conta, a conta 4 (c4):
         System.out.println("Olá, " + c4.titular + "! Proprietária da conta " + c4.getNumero() + ", correto? ");
