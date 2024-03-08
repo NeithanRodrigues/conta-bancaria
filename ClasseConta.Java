@@ -1,14 +1,19 @@
 public class Conta {
 
-    String  titular;
+    public String  titular;
     private int numero;
-    String agencia;
+    public String agencia;
     private double saldo;
+    public static int totaldeContas;
     Data data;
-
-    public Conta (String titular, String agencia){
+    Conta (String titular, String agencia){
         this.titular = titular;
         this.agencia = agencia;
+        Conta.totaldeContas = totaldeContas + 1;
+    }
+
+    public static int getTotaldeContas(){
+        return Conta.totaldeContas;
     }
     public void setNumero(int numero){
         this.numero = numero;
@@ -33,7 +38,6 @@ public class Conta {
     public void depositar(double valor){
         saldo += valor;
     }
-
     public double calcularRendimento(){
         return saldo * 0.1;
     }
