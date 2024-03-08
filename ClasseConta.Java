@@ -4,7 +4,7 @@ public class Conta {
     private int numero;
     String agencia;
     private double saldo;
-    String data;
+    Data data;
 
     public Conta (String titular, String agencia){
         this.titular = titular;
